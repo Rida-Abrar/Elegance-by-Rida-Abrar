@@ -1,0 +1,122 @@
+/* Global Styles */
+
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    margin: 0;
+    padding: 0;
+  }
+  
+  .navbar {
+    background-color: #343a40 !important;
+  }
+  
+  .navbar-brand {
+    font-weight: bold;
+    color: #fff !important;
+  }
+  
+  .hero-section {
+    background: url('background.jpg') no-repeat center center;
+    background-size: cover;
+    color: white;
+    padding: 100px 0;
+    text-align: center;
+    position: relative;
+  }
+  
+  .hero-section::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: rgba(0, 0, 0, 0.5); /* Adds a dark overlay for better text visibility */
+    z-index: 1;
+  }
+  
+  .hero-section .container {
+    position: relative;
+    z-index: 2;
+  }
+  
+  .section-title {
+    margin-top: 50px;
+    font-size: 3rem;
+    color: #fff;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+  }
+  
+  .icon-list {
+    list-style: none;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+  }
+  
+  .icon-list li {
+    margin: 0 20px;
+  }
+  
+  .icon-list li a {
+    color: #fff;
+    text-decoration: none;
+    font-size: 32px;
+    border: 2px solid #fff;
+    padding: 10px 20px;
+    border-radius: 20px;
+    transition: all 0.3s ease;
+  }
+  
+  .icon-list li a:hover {
+    background-color: #fff;
+    color: #343a40;
+  }
+  
+  footer {
+    background-color: #f8f9fa;
+    padding: 1rem 0;
+  }
+  
+  
+  /* Product Page Styles */
+  
+  .product-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+  
+  .product-card {
+    margin: 20px;
+    width: 300px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  }
+  
+  .product-card img {
+    max-width: 100%;
+    height: auto;
+  }
+  
+  .product-card .card-body {
+    text-align: center;
+  }
+  
+  .product-card .card-title {
+    font-weight: bold;
+  }
+  
+  .product-card .card-text {
+    margin-bottom: 20px;
+  }
+  
+  .product-card .btn-primary {
+    background-color: #007bff;
+    border-color: #007bff;
+  }
+  
+  .product-card .btn-primary:hover {
+    background-color: #0056b3;
+    border-color: #0056b3;
+  }
+  
